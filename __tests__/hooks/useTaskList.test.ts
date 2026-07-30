@@ -55,4 +55,40 @@ describe('useTaskList', () => {
     expect(result.current.tasks).toHaveLength(1);
     expect(result.current.tasks[0].id).toBe('2');
   });
+
+  /// Pruebas Nuevas de acuerdo a las sugerencias del segundo Punto
+
+  it('elimina los espacios externos antes de guardar una tarea', async () => {
+    // Se utiliza un título con espacios al inicio y al final para comprobar
+    // que el hook almacene únicamente el contenido útil ingresado por el usuario.
+    const { result } = await renderHook(() => useTaskList());
+
+    await act(() => {
+      result.current.addTask('  Preparar informe  ');
+    });
+
+    expect(result.current.tasks).toHaveLength(1);
+    expect(result.current.tasks[0].title).toBe('Preparar informe');
+    expect(result.current.taskCount).toBe(1);
+    expect(result.current.error).toBeNull();
+  });
+
+  it('mantiene la lista cuando se intenta eliminar un id inexistente', async () => {
+    // Se valida que un identificador inexistente no elimine ni modifique
+    // las tareas que ya se encuentran almacenadas.
+    const initialTasks = [
+      { id: '1', title: 'Preparar informe', status: 'pending' as const },
+      { id: '2', title: 'Revisar resultados', status: 'completed' as const },
+    ];
+
+    const { result } = await renderHook(() => useTaskList(initialTasks));
+
+    await act(() => {
+      result.current.removeTask('99');
+    });
+
+    expect(result.current.tasks).toEqual(initialTasks);
+    expect(result.current.taskCount).toBe(2);
+  });
+
 });

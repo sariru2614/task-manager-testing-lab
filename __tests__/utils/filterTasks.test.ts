@@ -25,8 +25,52 @@ describe('filterTasksByStatus', () => {
     expect(result).toHaveLength(4);
   });
 
+  it('aplica el filtro sin modificar la lista original', () => {
+  // Se guarda una copia para comprobar que el filtro no altere
+  // la colección que recibió como entrada.
+  const estadoInicial = mockTasks.map((task) => ({ ...task }));
+  const resultado = filterTasksByStatus(mockTasks, 'pending');
+
+  expect(mockTasks).toEqual(estadoInicial);
+  expect(resultado).not.toBe(mockTasks);
+});
+
+
   it('lanza un error cuando el estado es inválido', () => {
     // @ts-expect-error probando entrada inválida en runtime
     expect(() => filterTasksByStatus(mockTasks, 'invalido')).toThrow();
   });
+
+  /// Pruebas Nuevas de acuerdo a las sugerencias del primer punto
+
+  it('devuelve unicamente las tareas pendientes', () => {
+  
+  // Definiciones
+  // Se utiliza una lista con distintos estados para comprobar que el filtro
+  // no incluya tareas completadas u otras que no correspondan al criterio.
+  const estado = 'pending';
+  const result = filterTasksByStatus(mockTasks, estado);
+  const titulos = result.map((task) => task.title);
+
+  // Se valida la cantidad y también el contenido para evitar que la prueba
+  // pase únicamente porque retornó dos elementos incorrectos.
+  
+  expect(result).toHaveLength(2);
+  expect(titulos).toContain('Comprar leche');
+  expect(titulos).toContain('Hacer ejercicio');
+
+  });
+
+  it('devuelve un arreglo vacio cuando recibe una lista sin tareas', () => {
+  // Defincioces
+  // Este caso límite permite confirmar que la función maneja una colección
+  // vacía sin generar errores ni retornar información inesperada.
+  const tareasVacias: Task[] = [];
+  const result = filterTasksByStatus(tareasVacias, 'pending');
+  expect(result).toEqual([]);
+
+  });
+
+
+
 });
