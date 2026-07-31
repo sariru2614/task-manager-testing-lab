@@ -71,6 +71,20 @@ describe('filterTasksByStatus', () => {
 
   });
 
+  it('filtra correctamente una lista que contiene una sola tarea', () => {
+  //Definiciones
+  // Probamos el caso más pequeño posible: una lista con una sola tarea.
+  // La idea es confirmar que el filtro también responde bien con pocos datos.
+  const listaMinima: Task[] = [
+    { id: '5', title: 'Enviar informe', status: 'pending' },
+  ];
+
+  const resultado = filterTasksByStatus(listaMinima, 'pending');
+
+  expect(resultado).toHaveLength(1);
+  expect(resultado).toEqual(listaMinima);
+});
+
 
 
 });

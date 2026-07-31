@@ -1,0 +1,1339 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 13,
+  "numPassedTests": 62,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 13,
+  "numTotalTests": 62,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1785462174526,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 7,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462180317,
+        "runtime": 4989,
+        "slow": false,
+        "start": 1785462175328
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\hooks\\useTaskList.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "useTaskList"
+          ],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useTaskList inicia con una lista vacía por defecto",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "inicia con una lista vacía por defecto"
+        },
+        {
+          "ancestorTitles": [
+            "useTaskList"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useTaskList agrega una tarea correctamente",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "agrega una tarea correctamente"
+        },
+        {
+          "ancestorTitles": [
+            "useTaskList"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useTaskList establece un error cuando el título está vacío",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "establece un error cuando el título está vacío"
+        },
+        {
+          "ancestorTitles": [
+            "useTaskList"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useTaskList limpia el error al agregar una tarea válida después de un error",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "limpia el error al agregar una tarea válida después de un error"
+        },
+        {
+          "ancestorTitles": [
+            "useTaskList"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useTaskList elimina una tarea por su id",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "elimina una tarea por su id"
+        },
+        {
+          "ancestorTitles": [
+            "useTaskList"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useTaskList elimina los espacios externos antes de guardar una tarea",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "elimina los espacios externos antes de guardar una tarea"
+        },
+        {
+          "ancestorTitles": [
+            "useTaskList"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useTaskList mantiene la lista cuando se intenta eliminar un id inexistente",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "mantiene la lista cuando se intenta eliminar un id inexistente"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 11,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462180798,
+        "runtime": 405,
+        "slow": false,
+        "start": 1785462180393
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\utils\\validateTask.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es válido"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es válido retorna null para un título con longitud válida",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna null para un título con longitud válida"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es válido"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es válido retorna null para un título con exactamente 3 caracteres",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna null para un título con exactamente 3 caracteres"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es válido"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es válido retorna null para un título con exactamente 100 caracteres",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna null para un título con exactamente 100 caracteres"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido retorna mensaje de error para un string vacío",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna mensaje de error para un string vacío"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido retorna mensaje de error para un string con solo espacios",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna mensaje de error para un string con solo espacios"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido retorna mensaje de error para un título con menos de 3 caracteres",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna mensaje de error para un título con menos de 3 caracteres"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido retorna mensaje de error para un título con más de 100 caracteres",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna mensaje de error para un título con más de 100 caracteres"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido retorna el mensaje de campo obligatorio cuando recibe un valor nulo",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna el mensaje de campo obligatorio cuando recibe un valor nulo"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido acepta un titulo valido aunque tenga espacios al inicio y al final",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "acepta un titulo valido aunque tenga espacios al inicio y al final"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido rechaza un titulo que queda por debajo de la longitud minima después de quitar espacios",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "rechaza un titulo que queda por debajo de la longitud minima después de quitar espacios"
+        },
+        {
+          "ancestorTitles": [
+            "validateTaskTitle",
+            "cuando el título es inválido"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "validateTaskTitle cuando el título es inválido retorna el mensaje de campo obligatorio cuando recibe undefined",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "retorna el mensaje de campo obligatorio cuando recibe undefined"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 8,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462181268,
+        "runtime": 443,
+        "slow": false,
+        "start": 1785462180825
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\utils\\filterTasks.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus devuelve solo las tareas con el estado indicado",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "devuelve solo las tareas con el estado indicado"
+        },
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus devuelve un arreglo vacío cuando no hay coincidencias",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "devuelve un arreglo vacío cuando no hay coincidencias"
+        },
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus devuelve todas las tareas cuando el estado es \"all\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "devuelve todas las tareas cuando el estado es \"all\""
+        },
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus aplica el filtro sin modificar la lista original",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "aplica el filtro sin modificar la lista original"
+        },
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus lanza un error cuando el estado es inválido",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "lanza un error cuando el estado es inválido"
+        },
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus devuelve unicamente las tareas pendientes",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "devuelve unicamente las tareas pendientes"
+        },
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus devuelve un arreglo vacio cuando recibe una lista sin tareas",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "devuelve un arreglo vacio cuando recibe una lista sin tareas"
+        },
+        {
+          "ancestorTitles": [
+            "filterTasksByStatus"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "filterTasksByStatus filtra correctamente una lista que contiene una sola tarea",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "filtra correctamente una lista que contiene una sola tarea"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462185347,
+        "runtime": 4048,
+        "slow": false,
+        "start": 1785462181299
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\components\\ConfirmDeleteDialog.test.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "ConfirmDeleteDialog"
+          ],
+          "duration": 3572,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ConfirmDeleteDialog muestra el texto \"Eliminar tarea\" cuando el diálogo está visible",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra el texto \"Eliminar tarea\" cuando el diálogo está visible"
+        },
+        {
+          "ancestorTitles": [
+            "ConfirmDeleteDialog"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ConfirmDeleteDialog muestra el texto \"¿Seguro que quieres eliminar `Cocinar`?\" cuando el diálogo está visible",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra el texto \"¿Seguro que quieres eliminar `Cocinar`?\" cuando el diálogo está visible"
+        },
+        {
+          "ancestorTitles": [
+            "ConfirmDeleteDialog"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ConfirmDeleteDialog llama a onConfirm al presionar \"Eliminar\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "llama a onConfirm al presionar \"Eliminar\""
+        },
+        {
+          "ancestorTitles": [
+            "ConfirmDeleteDialog"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ConfirmDeleteDialog llama a onCancel al presionar \"Cancelar\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "llama a onCancel al presionar \"Cancelar\""
+        },
+        {
+          "ancestorTitles": [
+            "ConfirmDeleteDialog"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ConfirmDeleteDialog muestra un mensaje general cuando no recibe el título de la tarea",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra un mensaje general cuando no recibe el título de la tarea"
+        },
+        {
+          "ancestorTitles": [
+            "ConfirmDeleteDialog"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ConfirmDeleteDialog no muestra el contenido cuando el diálogo está cerrado",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "no muestra el contenido cuando el diálogo está cerrado"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 7,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462185849,
+        "runtime": 462,
+        "slow": false,
+        "start": 1785462185387
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\hooks\\useCounter.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "useCounter"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCounter inicia con el valor por defecto (0)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "inicia con el valor por defecto (0)"
+        },
+        {
+          "ancestorTitles": [
+            "useCounter"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCounter inicia con el valor proporcionado",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "inicia con el valor proporcionado"
+        },
+        {
+          "ancestorTitles": [
+            "useCounter"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCounter incrementa el contador en 1",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "incrementa el contador en 1"
+        },
+        {
+          "ancestorTitles": [
+            "useCounter"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCounter decrementa el contador en 1",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "decrementa el contador en 1"
+        },
+        {
+          "ancestorTitles": [
+            "useCounter"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCounter reinicia el contador al valor inicial",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "reinicia el contador al valor inicial"
+        },
+        {
+          "ancestorTitles": [
+            "useCounter"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCounter aplica correctamente varias operaciones consecutivas",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "aplica correctamente varias operaciones consecutivas"
+        },
+        {
+          "ancestorTitles": [
+            "useCounter"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCounter permite decrementar el contador por debajo de cero",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "permite decrementar el contador por debajo de cero"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462186434,
+        "runtime": 557,
+        "slow": false,
+        "start": 1785462185877
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\components\\TaskForm.test.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TaskForm"
+          ],
+          "duration": 114,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskForm llama a onSubmit con el título ingresado al presionar \"Guardar\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "llama a onSubmit con el título ingresado al presionar \"Guardar\""
+        },
+        {
+          "ancestorTitles": [
+            "TaskForm"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskForm no llama a onSubmit si el campo está vacío",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "no llama a onSubmit si el campo está vacío"
+        },
+        {
+          "ancestorTitles": [
+            "TaskForm"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskForm actualiza el campo cuando el usuario escribe un título",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "actualiza el campo cuando el usuario escribe un título"
+        },
+        {
+          "ancestorTitles": [
+            "TaskForm"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskForm no envía el formulario cuando el título contiene solo espacios",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "no envía el formulario cuando el título contiene solo espacios"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462186914,
+        "runtime": 454,
+        "slow": false,
+        "start": 1785462186460
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\hooks\\useCreateTask.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "useCreateTask"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCreateTask elimina una tarea creada cuando recibe su identificador",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "elimina una tarea creada cuando recibe su identificador"
+        },
+        {
+          "ancestorTitles": [
+            "useCreateTask"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useCreateTask cambia el estado a error cuando no se puede crear la tarea",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "cambia el estado a error cuando no se puede crear la tarea"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462187420,
+        "runtime": 476,
+        "slow": false,
+        "start": 1785462186944
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\components\\TaskCard.test.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TaskCard"
+          ],
+          "duration": 27,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskCard muestra el título de la tarea",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra el título de la tarea"
+        },
+        {
+          "ancestorTitles": [
+            "TaskCard"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskCard muestra el estado \"Pendiente\" para tareas pendientes",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra el estado \"Pendiente\" para tareas pendientes"
+        },
+        {
+          "ancestorTitles": [
+            "TaskCard"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskCard muestra el estado \"Completada\" para tareas completadas",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra el estado \"Completada\" para tareas completadas"
+        },
+        {
+          "ancestorTitles": [
+            "TaskCard"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskCard llama a onDelete con el id correcto al presionar \"Eliminar\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "llama a onDelete con el id correcto al presionar \"Eliminar\""
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462187824,
+        "runtime": 377,
+        "slow": false,
+        "start": 1785462187447
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\contract\\taskApi.contract.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "API Contract - Tasks"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "API Contract - Tasks la respuesta de GET /tasks cumple con el esquema esperado",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "la respuesta de GET /tasks cumple con el esquema esperado"
+        },
+        {
+          "ancestorTitles": [
+            "API Contract - Tasks"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "API Contract - Tasks detecta cuando la API devuelve un campo con tipo incorrecto",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "detecta cuando la API devuelve un campo con tipo incorrecto"
+        },
+        {
+          "ancestorTitles": [
+            "API Contract - Tasks"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "API Contract - Tasks detecta cuando la API omite un campo requerido",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "detecta cuando la API omite un campo requerido"
+        },
+        {
+          "ancestorTitles": [
+            "API Contract - Tasks"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "API Contract - Tasks detecta cuando la API envía un status inválido",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "detecta cuando la API envía un status inválido"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462188288,
+        "runtime": 435,
+        "slow": false,
+        "start": 1785462187853
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\accessibility\\TaskCard.a11y.test.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TaskCard - Accesibilidad"
+          ],
+          "duration": 28,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskCard - Accesibilidad el botón de eliminar tiene un accessibilityLabel descriptivo",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "el botón de eliminar tiene un accessibilityLabel descriptivo"
+        },
+        {
+          "ancestorTitles": [
+            "TaskCard - Accesibilidad"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskCard - Accesibilidad el contenedor de la tarea tiene el rol correcto",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "el contenedor de la tarea tiene el rol correcto"
+        },
+        {
+          "ancestorTitles": [
+            "TaskCard - Accesibilidad"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskCard - Accesibilidad el estado de la tarea es anunciado al lector de pantalla",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "el estado de la tarea es anunciado al lector de pantalla"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462189445,
+        "runtime": 1106,
+        "slow": false,
+        "start": 1785462188339
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\integration\\CreateTaskScreen.test.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "CreateTaskScreen - Integración"
+          ],
+          "duration": 521,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateTaskScreen - Integración crea una tarea exitosamente y muestra confirmación",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "crea una tarea exitosamente y muestra confirmación"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462189999,
+        "runtime": 519,
+        "slow": false,
+        "start": 1785462189480
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\components\\TaskList.test.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "TaskList"
+          ],
+          "duration": 27,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskList muestra un mensaje cuando la lista está vacía",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra un mensaje cuando la lista está vacía"
+        },
+        {
+          "ancestorTitles": [
+            "TaskList"
+          ],
+          "duration": 56,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskList no muestra el mensaje de lista vacía cuando hay tareas",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "no muestra el mensaje de lista vacía cuando hay tareas"
+        },
+        {
+          "ancestorTitles": [
+            "TaskList"
+          ],
+          "duration": 6,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TaskList muestra el contador de tareas correctamente",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "muestra el contador de tareas correctamente"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1785462190394,
+        "runtime": 358,
+        "slow": false,
+        "start": 1785462190036
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\Sara Cadavid\\OneDrive - TRONEX S.A\\Documents\\Especialización\\MobReaNat\\task-manager-testing-lab\\__tests__\\setup.test.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Configuración del entorno"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Configuración del entorno Jest está funcionando correctamente",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Jest está funcionando correctamente"
+        },
+        {
+          "ancestorTitles": [
+            "Configuración del entorno"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Configuración del entorno Los matchers básicos funcionan",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Los matchers básicos funcionan"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}

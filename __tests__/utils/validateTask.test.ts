@@ -72,5 +72,18 @@ describe('validateTaskTitle', () => {
     expect(result).toBe('El título debe tener al menos 3 caracteres');
 
     });
+
+    it('retorna el mensaje de campo obligatorio cuando recibe undefined', () => {
+    //Definciones
+    // Este valor puede aparecer cuando el formulario todavía no ha inicializado
+    // el título o cuando falta información en una integración.
+    const tituloSinDefinir = undefined;
+
+    // @ts-expect-error Se envía undefined.
+    const resultado = validateTaskTitle(tituloSinDefinir);
+
+    expect(resultado).toBe('El título es obligatorio');
+    });
+
   });
 });
