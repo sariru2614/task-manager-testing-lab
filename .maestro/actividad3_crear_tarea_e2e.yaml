@@ -1,0 +1,22 @@
+appId: com.taskmanager.app
+---
+- launchApp:
+    clearState: true
+
+# Verifica que la aplicación abra en la pantalla principal.
+- assertVisible: "Task Manager"
+
+# Ingresa al flujo que vamos a validar de principio a fin.
+- tapOn: "Flujo Todo List"
+- assertVisible: "Nueva tarea"
+
+# Completa el formulario con una tarea de prueba.
+- tapOn:
+    id: "input-titulo"
+- inputText: "Actividad 3 con Maestro"
+
+- tapOn: "Guardar"
+
+# Comprueba el resultado que ve el usuario.
+- assertVisible: "Tarea creada exitosamente"
+- assertVisible: "Actividad 3 con Maestro"

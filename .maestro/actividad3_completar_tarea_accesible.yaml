@@ -1,0 +1,36 @@
+appId: com.taskmanager.app
+---
+
+- launchApp
+
+# Esperamos a que el development build termine de cargar.
+- extendedWaitUntil:
+    visible: "Task Manager"
+    timeout: 20000
+
+# Entramos al flujo de tareas.
+- tapOn: "Flujo Todo List"
+
+- extendedWaitUntil:
+    visible: "Nueva tarea"
+    timeout: 10000
+
+# Creamos una tarea que servirá como dato para el escenario.
+- tapOn:
+    id: "input-titulo"
+- inputText: "Validar accesibilidad Maestro"
+- tapOn: "Guardar"
+
+- extendedWaitUntil:
+    visible: "Validar accesibilidad Maestro"
+    timeout: 10000
+
+# Usamos la etiqueta accesible de la tarea para cambiar su estado.
+- tapOn: "Marcar tarea Validar accesibilidad Maestro como completada"
+
+# Validamos que el cambio de estado se refleje en pantalla.
+- assertVisible: "Completada"
+
+# Validamos el filtro de tareas completadas.
+- tapOn: "Completadas"
+- assertVisible: "Validar accesibilidad Maestro"
