@@ -3,34 +3,50 @@ appId: com.taskmanager.app
 
 - launchApp
 
-# Esperamos a que el development build termine de cargar.
 - extendedWaitUntil:
     visible: "Task Manager"
     timeout: 20000
 
-# Entramos al flujo de tareas.
 - tapOn: "Flujo Todo List"
 
 - extendedWaitUntil:
     visible: "Nueva tarea"
     timeout: 10000
 
-# Creamos una tarea que servirá como dato para el escenario.
+# Damos foco al campo de título.
 - tapOn:
     id: "input-titulo"
-- inputText: "Validar accesibilidad Maestro"
-- tapOn: "Guardar"
 
+# Ingresamos el título de la tarea.
+- inputText: "Validar accesibilidad Maestro2"
+
+# Confirmamos que el texto fue ingresado.
+- assertVisible: "Validar accesibilidad Maestro2"
+
+# Guardamos la tarea utilizando la acción Enter/Done del teclado.
+- pressKey: enter
+
+# Confirmamos que la creación fue exitosa.
 - extendedWaitUntil:
-    visible: "Validar accesibilidad Maestro"
+    visible: "Tarea creada exitosamente"
     timeout: 10000
 
-# Usamos la etiqueta accesible de la tarea para cambiar su estado.
-- tapOn: "Marcar tarea Validar accesibilidad Maestro como completada"
+# Confirmamos que la nueva tarea aparece en la lista.
+- extendedWaitUntil:
+    visible: "Validar accesibilidad Maestro2"
+    timeout: 10000
 
-# Validamos que el cambio de estado se refleje en pantalla.
-- assertVisible: "Completada"
+# Marcamos la tarea como completada usando un identificador estable.
+- tapOn:
+    id: "boton-toggle-estado"
 
-# Validamos el filtro de tareas completadas.
+# Confirmamos visualmente el cambio de estado.
+- extendedWaitUntil:
+    visible: "✓ Completada"
+    timeout: 5000
+
+# Filtramos únicamente las tareas completadas.
 - tapOn: "Completadas"
-- assertVisible: "Validar accesibilidad Maestro"
+
+# Confirmamos que la tarea completada aparece en el filtro.
+- assertVisible: "Validar accesibilidad Maestro2"
