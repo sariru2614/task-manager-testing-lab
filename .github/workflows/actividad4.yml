@@ -24,10 +24,59 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Ejecutar pruebas con cobertura
-        run: npm run test:coverage -- --ci
+        run: npm run test:coverage -- --ci --json --outputFile=test-results.json
+
+      - name: Generar reporte HTML
+        run: npm run report:test
+
+      - name: Mostrar resumen de la ejecución
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const tests = JSON.parse(
+            fs.readFileSync('test-results.json', 'utf8')
+          );
+
+          const coverage = JSON.parse(
+            fs.readFileSync(
+              'coverage/coverage-summary.json',
+              'utf8'
+            )
+          ).total;
+
+          const summary = `
+          ## Resultado de la ejecución
+
+          | Resultado | Aprobadas | Total |
+          |---|---:|---:|
+          | Test Suites | ${tests.numPassedTestSuites} | ${tests.numTotalTestSuites} |
+          | Tests | ${tests.numPassedTests} | ${tests.numTotalTests} |
+
+          ## Cobertura
+
+          | Métrica | Resultado | Umbral |
+          |---|---:|---:|
+          | Statements | ${coverage.statements.pct}% | 70% |
+          | Branches | ${coverage.branches.pct}% | 70% |
+          | Functions | ${coverage.functions.pct}% | 70% |
+          | Lines | ${coverage.lines.pct}% | 70% |
+
+          **Todas las métricas globales deben alcanzar como mínimo el 70%.**
+          `;
+
+          fs.appendFileSync(
+            process.env.GITHUB_STEP_SUMMARY,
+            summary
+          );
+          NODE
 
       - name: Publicar reporte de cobertura
         uses: actions/upload-artifact@v4
         with:
           name: reporte-cobertura
-          path: coverage/
+          path: |
+            coverage/
+            test-results.json
+          if-no-files-found: error

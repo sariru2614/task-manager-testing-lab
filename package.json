@@ -42,7 +42,8 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "report:test": "node scripts/generate-test-report.js"
   },
   "private": true
 }
