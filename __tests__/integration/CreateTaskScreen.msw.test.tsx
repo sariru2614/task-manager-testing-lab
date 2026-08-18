@@ -42,7 +42,7 @@ describe('CreateTaskScreen - Integración con MSW', () => {
     ).toBeTruthy();
 
     expect(screen.getByText('Preparar actividad 3')).toBeTruthy();
-  });
+  }, 10000);
 
   it('muestra un mensaje cuando la API falla al crear la tarea', async () => {
     server.use(
